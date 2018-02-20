@@ -19,6 +19,3 @@ public class reverseof
       System.out.print(temp);
     }
 }
-     
-     
-     
