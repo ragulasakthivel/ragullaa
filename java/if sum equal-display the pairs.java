@@ -7,7 +7,7 @@ public class Summ
         // TODO code application logic here
         Scanner sc=new Scanner(System.in);
         int s=sc.nextInt();
-        
+        int count=0;
         int arr[]=new int[s];
         for(int i=0;i<arr.length;i++)
         {
@@ -20,8 +20,12 @@ public class Summ
             {
                 int num=arr[i]+arr[j];
                 if(num==sum)
+                {
                     System.out.printf("(%d,%d)",arr[i],arr[j]);
+                    count++;
             }
+            if(count==0)
+                System.out.print("-1");
         }
         
     }
