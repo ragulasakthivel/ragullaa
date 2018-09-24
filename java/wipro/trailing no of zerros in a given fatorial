@@ -1,0 +1,31 @@
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+
+public class MyClass {
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        int x=1,zeros=0,den=5;
+         while(den<num)
+        {
+          zeros=zeros+(num/den);
+          x++;
+          den=exponent(5,x); 
+        }
+         System.out.print(zeros); 
+    }
+    public static int exponent(int a,int pow)
+    {
+    int exp=1;
+    while(pow!=0)
+    {
+     exp=exp*a;  
+     pow--;
+    }
+   return exp;
+   
+    }
+}
+
